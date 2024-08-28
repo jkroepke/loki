@@ -22,7 +22,6 @@ Entries should include a reference to the pull request that introduced the chang
 
 - [CHANGE] Bumped version of `kiwigrid/k8s-sidecar` to 1.27.5; this remediates several CVE
 
-
 ## 6.10.0
 
 - [CHANGE] Changed version of Grafana Enterprise Logs to 3.1.1
