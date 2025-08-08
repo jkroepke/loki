@@ -69,3 +69,5 @@ gateway:
   enabled: true
   basicAuth:
     enabled: true
+  nginxConfig:
+    keepAlive: 32

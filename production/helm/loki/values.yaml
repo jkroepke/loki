@@ -1264,6 +1264,8 @@ gateway:
     customWriteUrl: null
     # -- Override Backend URL
     customBackendUrl: null
+    # -- Allows overriding the default keepalive setting for the Nginx upstreams. If set to `null`, keepalive is disabled.
+    keepAlive: null
     # -- Allows overriding the DNS resolver address nginx will use.
     resolver: ""
     # -- Config file contents for Nginx. Passed through the `tpl` function to allow templating
