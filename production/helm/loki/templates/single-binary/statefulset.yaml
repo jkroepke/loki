@@ -243,6 +243,10 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      {{- with .Values.singleBinary.topologySpreadConstraints }}
+      topologySpreadConstraints:
+        {{- tpl ( . | toYaml) $ | nindent 8 }}
+      {{- end }}
       volumes:
         - name: tmp
           emptyDir: {}

@@ -1500,6 +1500,9 @@ singleBinary:
   nodeSelector: {}
   # -- Tolerations for single binary pods
   tolerations: []
+  # -- Topology Spread Constraints for write pods
+  # The value will be passed through tpl.
+  topologySpreadConstraints: []
   persistence:
     # -- What to do with the volume when the StatefulSet is scaled down.
     whenScaled: Delete
